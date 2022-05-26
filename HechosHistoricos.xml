@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<hechos_historicos>
+<!DOCTYPE hechos_historicos SYSTEM "HechosHistoricos.dtd">
 
+<hechos_historicos>
+    <hecho descripcion="IBM da a conocer el PC.">
+        <fecha>
+            <formatoFecha>
+                <dia>12</dia>
+                <mes>8</mes>
+                <año>1981</año>
+            </formatoFecha>
+        </fecha>
+        <epoca/>
+        <PersonajeDestacado>
+            Test persona <Nombre></Nombre> y fecha de nacimiento: <FechaNacimiento></FechaNacimiento>
+        </PersonajeDestacado>
+    </hecho>
+    <hecho descripcion="Se funda Google. ">
+        <fecha>
+            <formatoFecha>
+                <dia>4</dia>
+                <mes>9</mes>
+                <año>1998</año>
+            </formatoFecha>
+        </fecha>
+        <epoca/>
+        <PersonajeDestacado>
+            Test persona <Nombre></Nombre> y fecha de nacimiento: <FechaNacimiento></FechaNacimiento>
+        </PersonajeDestacado>
+    </hecho>
+    <hecho descripcion="Se funda Facebook. ">
+        <fecha>
+            <formatoFecha>
+                <dia>4</dia>
+                <mes>2</mes>
+                <año>2004</año>
+            </formatoFecha>
+        </fecha>
+        <epoca/>
+        <PersonajeDestacado>
+            Test persona <Nombre></Nombre> y fecha de nacimiento: <FechaNacimiento></FechaNacimiento>
+        </PersonajeDestacado>
+    </hecho>
 </hechos_historicos>
