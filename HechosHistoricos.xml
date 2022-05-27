@@ -2,44 +2,35 @@
 
 <!DOCTYPE hechos_historicos SYSTEM "HechosHistoricos.dtd">
 
-<hechos_historicos>
-    <hecho descripcion="IBM da a conocer el PC.">
+<hechos_historicos version="1.1" clave="FDHGFGDS" xml:lang="es">
+    <hecho>
         <fecha>
             <formatoFecha>
-                <dia>12</dia>
-                <mes>8</mes>
-                <año>1981</año>
+                <dia>1</dia>
+                <mes>1</mes>
+                <año>2022</año>
             </formatoFecha>
         </fecha>
-        <epoca/>
-        <PersonajeDestacado>
+        <epoca>
+            <EPOCA1></EPOCA1>
+        </epoca>
+        <PersonajeDestacado paisOrigen="ESPAÑA" cedulasPrimos="cedula1 cedula2">
             Test persona <Nombre></Nombre> y fecha de nacimiento: <FechaNacimiento></FechaNacimiento>
         </PersonajeDestacado>
+        <fechaRelevante/>
     </hecho>
-    <hecho descripcion="Se funda Google. ">
+    <hecho descripcion="text" autor="oscar">
         <fecha>
-            <formatoFecha>
-                <dia>4</dia>
-                <mes>9</mes>
-                <año>1998</año>
-            </formatoFecha>
+            2022-10-09
         </fecha>
-        <epoca/>
-        <PersonajeDestacado>
-            Test persona <Nombre></Nombre> y fecha de nacimiento: <FechaNacimiento></FechaNacimiento>
-        </PersonajeDestacado>
-    </hecho>
-    <hecho descripcion="Se funda Facebook. ">
-        <fecha>
-            <formatoFecha>
-                <dia>4</dia>
-                <mes>2</mes>
-                <año>2004</año>
-            </formatoFecha>
-        </fecha>
-        <epoca/>
-        <PersonajeDestacado>
-            Test persona <Nombre></Nombre> y fecha de nacimiento: <FechaNacimiento></FechaNacimiento>
-        </PersonajeDestacado>
+        <epoca>
+            <EPOCA1></EPOCA1>
+        </epoca>
+        <epoca>
+            <EPOCA2></EPOCA2>
+        </epoca>
+        <PersonajeDestacado paisOrigen="ALEMANIA" cedula="cedula1"></PersonajeDestacado>
+        <PersonajeDestacado paisOrigen="EEUU" cedula="cedula2" cedulaHermano="cedula1"></PersonajeDestacado>
+        <fechaRelevante/>
     </hecho>
 </hechos_historicos>

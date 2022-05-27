@@ -1,14 +1,23 @@
-        <!ELEMENT hechos_historicos (hecho)+>
-        <!ELEMENT hecho (fecha, epoca, PersonajeDestacado*)>
-        <!ATTLIST hecho descripcion CDATA #REQUIRED>
-        <!ELEMENT epoca (EPOCA1|EPOCA2))
-        <!ELEMENT EPOCA1 (#PCDATA)>
-        <!ELEMENT EPOCA2 (#PCDATA)>
-        <!ELEMENT PersonajeDestacado ANY>
-        <!ELEMENT Nombre (#PCDATA)>
-        <!ELEMENT FechaNacimiento (#PCDATA)>
-        <!ELEMENT fecha (#PCDATA|formatoFecha)>
-        <!ELEMENT formatoFecha (dia, mes, año)>
-        <!ELEMENT dia (#PCDATA)>
-        <!ELEMENT mes (#PCDATA)>
-        <!ELEMENT año (#PCDATA)>
+<!ELEMENT hechos_historicos (hecho)+>
+<!ATTLIST hechos_historicos version CDATA #FIXED '1.1'
+                            clave NMTOKEN #REQUIRED>
+<!ATTLIST hechos_historicos xml:lang (es|en) CDATA #REQUIRED>
+<!ELEMENT hecho (fecha, epoca*, PersonajeDestacado*, fechaRelevante)?>
+<!ATTLIST hecho descripcion CDATA #IMPLIED
+                autor CDATA #FIXED 'oscar'>
+<!ELEMENT epoca (EPOCA1|EPOCA2)>
+<!ELEMENT EPOCA1 (#PCDATA)>
+<!ELEMENT EPOCA2 (#PCDATA)>
+<!ELEMENT PersonajeDestacado ANY>
+<!ATTLIST PersonajeDestacado paisOrigen (FRANCIA|ESPAÑA|ALEMANIA|JAPON|EEUU) #REQUIRED
+                             cedula ID #IMPLIED
+                             cedulaHermano IDREF #IMPLIED
+                             cedulasPrimos IDREFS #IMPLIED>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT FechaNacimiento (#PCDATA)>
+<!ELEMENT fecha (#PCDATA|formatoFecha)*>
+<!ELEMENT formatoFecha (dia, mes, año)>
+<!ELEMENT fechaRelevante EMPTY>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
